@@ -1,0 +1,138 @@
+/* ---------- CUSTOM PROPERTIES ----------*/
+:root {
+    --clr-white: #E6E3DB;
+    --clr-black: #2c2c2c;
+    --gap: 2rem;
+    --border-radius: 1rem;
+}
+
+/* ---------- RESET ----------*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {    
+    width: 100vw;          
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+/* ---------- TYPOGRAPHY ----------*/
+h1,
+h2,
+h3 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1 {
+    background: linear-gradient(45deg, #734CA9, #7F627B, #FF6392);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.comment,
+.selector {
+    font-weight: 600;
+}
+.comment {
+    color: #654B79;
+}
+
+.selector {
+    color: #61304B;
+    font-weight: 600;
+}
+
+/* ---------- LAYOUT ----------*/
+.container {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+    max-width: 90%;
+    margin-inline: 1em;
+}
+
+section + section {
+    --gap: 1.5rem;
+    margin-bottom: var(--gap);
+}
+
+section,
+.editor,
+.thumbnail {
+    border-radius: var(--border-radius);
+}
+
+h1,
+h2,
+h3,
+p,
+.thumbnail {
+    margin-bottom: var(--gap);
+}
+
+.boilerplate-section {
+    flex: 1 2 45%;
+    border: none;
+    outline: none;
+}
+
+.editor {
+    padding: var(--gap);
+    text-align: left;
+    color: var(--clr-black);
+    background-color: #F0EEE5;
+    background-image: repeating-linear-gradient(180deg, #E1DCCB, transparent 20px, #D2CCB1 20px, transparent 40px);
+}
+
+.editor > div {
+    --gap: .25rem;
+    margin-bottom: var(--gap);
+}
+
+.tools {
+    flex: 1 1 45%;
+    flex-wrap: nowrap;
+}
+
+.colours {
+    display: flex;
+    justify-content: center;
+    gap: var(--gap);
+}
+
+.thumbnail {
+    width: 310px;
+    margin-bottom: var(--gap);
+}
+
+/* ---------- COMPONENTS ----------*/
+#transparency-table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#transparency-table > th {
+    padding: 0 .5rem;
+}
+
+#transparency-table tr:nth-child(even) {
+    background-color: #E6E3DB80;
+}
+
+/* ---------- MEDIA QUERIES ----------*/
