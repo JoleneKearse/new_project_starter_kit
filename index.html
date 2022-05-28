@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inconsolata&family=Roboto+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc831cd623.js" crossorigin="anonymous"></script>
     <title>New Project Starter Kit</title>
 </head>
 <body>
@@ -19,33 +20,27 @@
                 <p>http://meyerweb.com/eric/tools/css/reset/ 
                     v2.0 | 20110126
                     License: none (public domain)</p>
-                <div class="editor" contenteditable="true" spellcheck="false">
-                    <p class="comment">/* ---------- CUSTOM PROPERTIES ----------*/</p>
-                    <pre>
-                        <span class="selector">
-:root</span> {
-                        <span class="properties">
+                <i class="fa-solid fa-copy" id="cssBoilerplateCopy"></i>
+                <div class="editor" id="editor" contenteditable="true" spellcheck="false">
+<!-- THIS NEEDS THIS UGLY FORMATTING TO AVOID EXTRA BLANK SPACE WHEN USING THE COPY FUNCTION -->
+<p class="comment">/* ---------- CUSTOM PROPERTIES ----------*/</p><pre><span class="selector">
+:root</span> {<span class="properties">
     --clr-white: #fff;
     --clr-black: #000;
-    --gap: 1rem;
-                        </span>
-}
-                    </pre>
-                    <p class="comment">/* ---------- RESET ----------*/</p>
-                    <pre>
-                        <span class="selector">
+    --gap: 1rem;</span>
+}</pre>
+
+<p class="comment">/* ---------- RESET ----------*/</p>
+<pre><span class="selector">
 *,
 *:before,
-*:after</span> {
-                        <span class="properties">
+*:after</span> {<span class="properties">
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-                        </span>
-}
-                    </pre>
-                    <pre>
-                        <span class="selector">
+</span>}</pre>
+<pre>
+<span class="selector">
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -58,84 +53,44 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video</span> {
-                        <span class="properties">
+time, mark, audio, video</span> {<span class="properties">
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
-                        </span>
-}
-                    </pre>
-                    <pre>
-                        <span class="selector">
-img</span> {
-                        <span class="properties">
+    vertical-align: baseline;</span>
+}</pre><pre><span class="selector">
+img</span> {<span class="properties">
     display: block;
-    max-width: 100%;
-                        </span>
-}
-                    </pre>
-                    <pre>
-                        <span class="selector">
-body</span> {
-                        <span class="properties">
-    font-family:
+    max-width: 100%;</span>
+}</pre><pre><span class="selector">
+body</span> {<span class="properties">
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     font-weight: 400;
     font-align: center;
     line-height: 1.2;
-    color:
-    background-color:
-                        </span>
-}
-                    </pre>
-                    <pre>
-                        <span class="selector">
-ol, ul</span> {
-                        <span class="properties">
-    quotes: none;
-                        </span>
-}
-                    </pre>
-
-                    <pre>
-                        <span class="selector">
+    color: #232323;
+    background-color: #f9ffff;</span>
+}</pre><pre><span class="selector">
+ol, ul</span> {<span class="properties">
+    quotes: none;</span>
+}</pre>
+<pre><span class="selector">
 blockquote:before, blockquote:after,
-q:before, q:after</span> {
-                        <span class="properties">
+q:before, q:after</span> {<span class="properties">
     content: '';
-    content: none;
-                        </span>
-}
-                    </pre>
-
-                    <pre>
-                        <span class="selector">
-table</span> {
-                        <span class="properties">
+    content: none;</span>
+}</pre><pre><span class="selector">
+table</span> {<span class="properties">
     border-collapse: collapse;
-    border-spacing: 0;
-                        </span>
-}
-                    </pre>
-
-                    <p class="comment">/* ---------- TYPOGRAPHY ----------*/</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="comment">/* ---------- LAYOUT ----------*/</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="comment">/* ---------- COMPONENTS ----------*/</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="comment">/* ---------- MEDIA QUERIES ----------*/</p>
-                </div>
+    border-spacing: 0;</span>
+}</pre>
+<p class="comment">/* ---------- TYPOGRAPHY ----------*/</p><br><br><br><p class="comment">/* ---------- LAYOUT ----------*/</p><br>
+<br><br><p class="comment">/* ---------- COMPONENTS ----------*/</p><br><br><br>
+<p class="comment">/* ---------- MEDIA QUERIES ----------*/</p>
+</div>
             </section>
 
             <div class="tools">
@@ -244,7 +199,7 @@ table</span> {
                     </div>
 
                     <div class="codepen-embed">
-                        <p class="codepen" data-height="600" data-slug-hash="GRQQZoO" data-editable="true" data-user="EnglishWithJolene" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                        <p class="codepen" data-height="500" data-slug-hash="GRQQZoO" data-editable="true" data-user="EnglishWithJolene" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/EnglishWithJolene/pen/GRQQZoO">
                             Change the Luminosity</a> by Jolene (<a href="https://codepen.io/EnglishWithJolene">@EnglishWithJolene</a>)
                             on <a href="https://codepen.io">CodePen</a>.</span>
@@ -257,13 +212,14 @@ table</span> {
                     <h2>Links</h2>
                     <div class="fonts">
                         <h3>Google Fonts</h3>
-                        <p>Search all the available fonts here:&#10;<a href="https://fonts.google.com/"><img src="images\Google-Fonts-Logo.png" alt="" class="thumbnail"></a></p>
+                        <p>Search all the available fonts here:<a href="https://fonts.google.com/" target="_blank"><img src="images\google-fonts.png" alt="" class="thumbnail"></a></p>
                     </div>
                     <div class="icons">
                         <h3>Icon Pack</h3>
                         <p>Font Awesome has free-to-use icons.</p>
-                        <a href="https://fontawesome.com/search?s=solid%2Cbrands"><img src="images\font_awesome.png" alt="" class="thumbnail"></a>
-                        <p>Copy code: &lt;script src="https://kit.fontawesome.com/fc831cd623.js" crossorigin="anonymous"&gt;&lt;/script&gt;</p>
+                        <a href="https://fontawesome.com/search?s=solid%2Cbrands" target="_blank"><img src="images\font_awesome.png" alt="" class="thumbnail"></a>
+                        <p>Copy code: <span class="fa-solid fa-copy copy-btn" id="fontAwesomeCopy"></span></p>
+                            <!-- script src="https://kit.fontawesome.com/fc831cd623.js" crossorigin="anonymous"&gt;&lt;/script&gt;</p> -->
                     </div>
             </section>
 
@@ -282,6 +238,11 @@ table</span> {
 
         <section class="help">
             <h2>Commonly Searched for Problems</h2>
+            <ul>
+                <li>repeating linear gradients</li>
+                <li>Media query for mobile landscape view</li>
+                <li>The difference between max-width & min-width in media queries</li>
+            </ul>
         </section>
     </main>
     <script src="app.js"></script>

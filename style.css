@@ -54,6 +54,23 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+i,
+.copy-btn {
+    color: var(--clr-black);
+    cursor: pointer;
+}
+
+i {
+    margin: 0 0 0 100%;
+}
+
+i:hover,
+i:focus,
+.copy-btn:hover,
+.copy-btn:focus {
+    color: #424242;
+}
+
 .comment,
 .selector {
     font-weight: 600;
@@ -196,3 +213,5 @@ iframe {
 }
 
 /* ---------- MEDIA QUERIES ----------*/
+
+
