@@ -82,7 +82,8 @@ h1,
 h2,
 h3,
 p,
-.thumbnail {
+.thumbnail,
+iframe {
     margin-bottom: var(--gap);
 }
 
@@ -111,6 +112,7 @@ p,
 }
 
 .colours {
+    --gap: 3rem;
     display: flex;
     justify-content: center;
     gap: var(--gap);
