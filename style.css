@@ -1,9 +1,18 @@
 /* ---------- CUSTOM PROPERTIES ----------*/
 :root {
     --clr-white: #E6E3DB;
+    --clr-acc1: #f9f871;
+    --clr-acc2: #9af48a;
+    --clr-acc3: #00e7b7;
+    --clr-acc4: #00d3e2;
+    --clr-acc5: #00b9f8;
+    --cl4-acc6: #279af1;
     --clr-black: #2c2c2c;
     --gap: 2rem;
     --border-radius: 1rem;
+    --gradient-blue: linear-gradient(135deg, #279af1, #00b9f8, #00d3e2);
+    --gradient-spring: linear-gradient(135deg, #00e7b7, #9af48a, #f9f871);
+    --gradient-purple: linear-gradient(135deg, #8e62a7, #92528a, #8f466e);
 }
 
 /* ---------- RESET ----------*/
@@ -58,18 +67,36 @@ h1 {
     font-weight: 600;
 }
 
+a {
+    color: var(--clr-acc3);
+}
+
+a:hover,
+a:focus {
+    color: var(--clr-acc5);
+}
+
+a:visited {
+    color: #92528a;
+}
+
 /* ---------- LAYOUT ----------*/
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: var(--gap);
     max-width: 90%;
-    margin-inline: 1em;
+    margin-inline: auto;
 }
 
 section + section {
     --gap: 1.5rem;
     margin-bottom: var(--gap);
+}
+
+section {
+    padding: var(--gap);
 }
 
 section,
@@ -91,6 +118,7 @@ iframe {
     flex: 1 2 45%;
     border: none;
     outline: none;
+    background: var(--gradient-purple);
 }
 
 .editor {
@@ -113,9 +141,39 @@ iframe {
 
 .colours {
     --gap: 3rem;
+    margin-bottom: 2rem;
+    background: var(--gradient-spring);
+    color: var(--clr-black);
+}
+
+.colours-rows {
     display: flex;
     justify-content: center;
     gap: var(--gap);
+}
+
+.codepen-embed {
+    margin-bottom: 0;
+}
+
+.links {
+    background: var(--gradient-blue);
+}
+
+/* .links > p {
+    padding-bottom: 1rem;
+}
+
+.links > .thumbnail {
+    padding-top: 1rem;
+} */
+
+.embed {
+    background: var(--gradient-spring);
+}
+
+.help {
+    background: var(--gradient-blue);
 }
 
 .thumbnail {
